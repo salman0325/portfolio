@@ -10,7 +10,7 @@
 }
 body{
     color: #ededed;
-    background-color: #081b29;
+    background-color: #ec9e17;
 }
 .header{
     position: fixed;
@@ -18,7 +18,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #051129;
+    background:  #080808;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,7 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 .navbar a:hover {
-    color: #0ef;
+    color:#E46400;
 
 }
 .home{
@@ -87,7 +87,7 @@ body{
     animation-delay: .7s;
 }
 .home-content h3 span {
-    color: #0ef;
+    color:#E46400;
 }
 .home-content h1{
     font-size: 56px;
@@ -107,7 +107,7 @@ body{
     animation-delay: 1s;
 }
 .myname{
-    color: #0ef;
+    color:#E46400;
 }
 .home-sci a{
     display: inline-flex;
@@ -116,10 +116,10 @@ body{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid#E46400;
     border-radius: 50%;
     font-style: 20px;
-    color: #0ef;
+    color:#E46400;
     text-decoration: none;
     opacity: 0;
     animation: slideleft 1s ease forwards;
@@ -128,14 +128,14 @@ body{
     margin: 30px 15px 30px 0;
 }
 .home-sci a:hover{
-    background: #0ef;
-    color: #081b29;
-    box-shadow: 0 0 20px #0ef;
+    background:#E46400;
+    color: #E46400;
+    box-shadow: 0 0 20px#E46400;
 }
 .btn-box{
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background:#E46400;
     color: #081b29;
     font-size: 16px;
     font-weight: 600;
@@ -145,20 +145,20 @@ body{
     opacity: 0;
     animation: slidetop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan
+    box-shadow: 0 0 5px #E46400
+    0 0 25px #E46400;
 }
 .btn-box:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 25px cyan,
-    0 0 100px cyan, 0 0 200px cyan
+    box-shadow: 0 0 5px #E46400,
+    0 0 25px #E46400, 0 0 25px #E46400,
+    0 0 100px #E46400, 0 0 200px #E46400
 } 
 
 
 .home-img img:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 25px cyan,
-    0 0 100px cyan, 0 0 200px cyan
+    box-shadow: 0 0 5px #E46400,
+    0 0 25px #E46400, 0 0 25px #E46400,
+    0 0 100px #E46400, 0 0 200px #E46400
 }
 
 /* .about{
@@ -187,7 +187,7 @@ body{
     font-size: 60px;
 }
 .about-text h2 span{
-    color: #0ef;
+    color:#E46400;
 }
 .about-text h4{
     font-size: 29px;
@@ -212,7 +212,7 @@ body{
   }
   
   body{
-    background: #061b2d;
+    background: #000;
     color: white;
   }
   
@@ -242,7 +242,7 @@ body{
   }
   
   .about-text h1 span{
-    color:#00f5ff;
+    color: #E46400;
   }
   
   .about-text h3{
@@ -261,11 +261,11 @@ body{
     display:inline-block;
     margin-top:30px;
     padding:14px 32px;
-    background:#00f5ff;
+    background: #E46400;
     color:black;
     text-decoration:none;
     border-radius:30px;
-    box-shadow:0 0 15px #00f5ff;
+    box-shadow:0 0 15px #E46400;
     transition:0.3s;
   }
   
@@ -284,13 +284,13 @@ body{
     height:250px;
     border-radius:50%;
     object-fit:cover;
-    background:#5fd3e5;
+    background: #E46400;
     /* padding:6px; */
   }
   .about-img img:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 25px cyan,
-    0 0 100px cyan, 0 0 200px cyan
+    box-shadow: 0 0 5px #E46400,
+    0 0 25px #E46400, 0 0 25px #E46400,
+    0 0 100px #E46400, 0 0 200px #E46400
 }
 
 
@@ -322,7 +322,7 @@ body{
     padding: 70px;
 }
 .sub-title span{
-    color: #0ef;
+    color:#E46400;
 }
 .container{
     padding: 90px;
@@ -341,7 +341,7 @@ body{
     border-right: 10px;
     border-radius: 20px;
     transition: background .5s, transform .5s;
-    box-shadow: 1px 1px 20px #012290f7;
+    box-shadow: 1px 1px 20px #E46400;
                 1px 1px 40px #0053bdf7               
 }
 .services-list div i {
@@ -363,7 +363,7 @@ body{
 .read{
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background:#E46400;
     border-radius: 40px;
     font-size: 16px;
     color: #081b29;
@@ -373,13 +373,13 @@ body{
     opacity: 0;
     animation: slidetop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan
+    box-shadow: 0 0 5px #E46400,
+    0 0 25px #E46400
 }
 .read:hover{
-     box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 25px cyan,
-    0 0 100px cyan, 0 0 200px cyan
+     box-shadow: 0 0 5px #E46400,
+    0 0 25px #E46400, 0 0 25px #E46400,
+    0 0 100px #E46400, 0 0 200px #E46400
 }
 .services-list div:hover{
     transform: translateY(-20px);
@@ -442,7 +442,7 @@ section{
 .Technical-bars .bar .progress-line span{
     display: block;
     height: 100%;
-    background-color: #0ef;
+    background-color:#E46400;
     position: absolute;
     border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -544,7 +544,7 @@ section{
 }
 .path{
     stroke-width: 10;
-    stroke: #0ef;
+    stroke:#E46400;
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -608,7 +608,7 @@ section{
     text-align: center;
 }
 .main-text h2 span{
-    color: #0ef;
+    color:#E46400;
 }
 .portfolio-content{
     display: grid;
@@ -640,7 +640,7 @@ section{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
+    background: linear-gradient(rgba(0,0,0,0.1),#E46400);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -693,12 +693,12 @@ section{
     margin-top: 130px;
 }
 .contact-text h2{
-    font-size: 90px;
+    font-size: 70px;
     line-height: 1;
     text-align: center;
 }
 .contact-text h2 span{
-    color: #0ef;
+    color:#E46400;
 }
 .contact-text h4{
     margin: 15px 0;
@@ -725,14 +725,14 @@ section{
 }
 .contact-list li{
     display: inline-block;
-    color: #0ef;
+    color:#E46400;
     font-size: 20px;
     font-weight: 600;
     transform: all .40s ease;
 }
 .contact-list li a:hover{
     transform: scale(1.01) translateY(-5px);
-    color: #0ef;
+    color:#E46400;
 }
 .contact-icons i{
     display: inline-flex;
@@ -741,10 +741,10 @@ section{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid#E46400;
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color:#E46400;
     /* text-decoration: none; */
     margin: 30px 15px 30px 0;
     transition: .5s ease;
@@ -753,9 +753,9 @@ section{
     animation-delay: calc(.2s * var(--i));
 }
 .contact-icons i:hover{
-    background: #0ef;
+    background:#E46400;
     color: #000;
-    box-shadow: 0 0 2px #0ef;
+    box-shadow: 0 0 2px#E46400;
 }
 .contact-form form{
     position: relative;
@@ -792,7 +792,7 @@ section{
 .contact-form form .send{
     display: inline-block;
     padding: 14px 60px;
-    background: #0ef;
+    background:#E46400;
     border-radius: 40px;
     font-size: 18px;
     color: #081b29;
@@ -802,22 +802,22 @@ section{
     opacity: 0;
     animation: slidetop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan
+    box-shadow: 0 0 5px #E46400,
+    0 0 25px #E46400
 }
 
 .contact-form form .send:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan,
-    0 0 50px cyan,
-    0 0 100px cyan,
-    0 0 200px cyan;
+    box-shadow: 0 0 5px #E46400,
+    0 0 25px #E46400,
+    0 0 50px #E46400,
+    0 0 100px #E46400,
+    0 0 200px #E46400;
 }
 .last-text p{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: rgb(7, 85, 91);
+    background: #1E1E1E;
     font-weight: 300;
     margin-top: 70px;
     margin-bottom: 25px;
@@ -829,7 +829,7 @@ section{
 }
 .top i {
     color: #000;
-    background: #0ef;
+    background:#E46400;
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
@@ -841,7 +841,7 @@ section{
 
 /* Main Section */
 #myProjectsHalfScreen {
-    background-color: #081b29;
+    background-color: #000;
     padding: 60px 20px;
 }
 
@@ -852,7 +852,7 @@ section{
 
 .projects-title-halfscreen {
     text-align: center;
-    color: #0ef;
+    color:#E46400;
     font-size: 36px;
     margin-bottom: 50px;
     text-transform: uppercase;
@@ -870,7 +870,7 @@ section{
 /* Each Project Card - 50% width for desktop */
 .project-card-halfscreen {
     flex: 1 1 calc(50% - 20px);
-    background-color: #081b29;
+    background-color: #1E1E1E;
     border-radius: 15px;
     padding: 25px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
@@ -879,12 +879,12 @@ section{
 
 .project-card-halfscreen:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 238, 255, 0.5);
+    box-shadow: 0 15px 30px #E46400;
 }
 
 /* Project Title & Tech */
 .project-card-halfscreen h2 {
-    color: #0ef;
+    color:#E46400;
     font-size: 22px;
     margin-bottom: 12px;
 }
@@ -912,7 +912,7 @@ section{
     text-decoration: none;
     display: inline-block;
     padding: 6px 12px;
-    background-color: #0ef;
+    background-color:#E46400;
     color: #081b29;
     border-radius: 6px;
     font-size: 12px;
@@ -921,7 +921,7 @@ section{
 }
 
 .project-links-halfscreen a:hover {
-    background-color: #00bcd4;
+    background-color: #E46400;
     transform: translateY(-2px);
 }
 
