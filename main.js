@@ -22,15 +22,24 @@ backend-5b7c9d4f2-m9j3k   1/1     Running   0          2d
 
 <span class="t-prompt">salman@devops</span><span class="t-out">:~$</span> <span class="t-cmd">_</span>`;
 
-var typedTerminal = new Typed("#terminal-text", {
-    strings: [terminalSession],
-    typeSpeed: 18,
-    startDelay: 400,
-    showCursor: true,
-    cursorChar: "▋",
-    contentType: "html",
-    loop: false
-});
+var terminalObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            new Typed("#terminal-text", {
+                strings: [terminalSession],
+                typeSpeed: 18,
+                startDelay: 200,
+                showCursor: true,
+                cursorChar: "▋",
+                contentType: "html",
+                loop: false
+            });
+            terminalObserver.disconnect();
+        }
+    });
+}, { threshold: 0.35 });
+
+terminalObserver.observe(document.getElementById("terminal-showcase"));
 
 var hamburger = document.getElementById("hamburger");
 var navbar = document.getElementById("navbar");
