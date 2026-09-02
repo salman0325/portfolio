@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🖥️ My Portfolio</title>
+    <meta name="description" content="Salman Khan — DevOps Associate Engineer. Docker, Kubernetes, AWS, Terraform, Jenkins, GitHub Actions, Argo CD, Prometheus & Grafana.">
+    <title>Salman Khan | DevOps Engineer Portfolio</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23E46400'/%3E%3Ctext x='50' y='69' font-size='52' font-family='Arial, Helvetica, sans-serif' font-weight='700' text-anchor='middle' fill='%23000'%3ESK%3C/text%3E%3C/svg%3E">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Salman Khan | DevOps Engineer Portfolio">
+    <meta property="og:description" content="DevOps & Cloud Associate with hands-on experience in Docker, Kubernetes, AWS, Terraform, Jenkins, GitHub Actions, Argo CD, Prometheus & Grafana.">
+    <meta property="og:image" content="pics/3.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Salman Khan | DevOps Engineer Portfolio">
+    <meta name="twitter:description" content="DevOps & Cloud Associate with hands-on experience in Docker, Kubernetes, AWS, Terraform, Jenkins, GitHub Actions, Argo CD, Prometheus & Grafana.">
+    <meta name="twitter:image" content="pics/3.jpeg">
+
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">My Portfolio</a>
-        <nav class="navbar">
+        <a href="#" class="logo">Salman<span>.</span></a>
+        <nav class="navbar" id="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#About" style="--i:2">About</a>
-            <a href="#Skills" style="--i:3">Skill</a>
-            <a href="#projects" style="--i:4">Projects</a>
-            <a href="#contact" style="--i:5">Contact</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#Skills" style="--i:3">Skills</a>
+            <a href="#experience" style="--i:4">Experience</a>
+            <a href="#myProjectsHalfScreen" style="--i:5">Projects</a>
+            <a href="#contact" style="--i:6">Contact</a>
         </nav>
+        <div class="hamburger" id="hamburger"><i class='bx bx-menu'></i></div>
     </header>
     <section class="home" id="home">
     <div class="home-content">
@@ -26,52 +42,194 @@
         <h1 class="same1">Salman Khan</h1>
         <h3 class="same">And I'm a <span class="text"></span></h3>
         <p class="intro">
-            DevOps Intern with hands-on experience in Docker, Kubernetes, and CI/CD pipelines. Experienced in deploying and automating containerized applications using GitOps practices. Skilled in infrastructure provisioning on AWS using Terraform, with monitoring and observability through Prometheus and Grafana.
-            <br>new technologies and improve my skills.
+            DevOps &amp; Cloud Associate with hands-on, project-proven experience across Docker, Kubernetes, AWS, Terraform, Jenkins, GitHub Actions, Argo CD, Prometheus, and Grafana. I build automated CI/CD pipelines, containerized deployments, and GitOps workflows that measurably cut deployment time and manual effort.
         </p>
         <div class="home-sci">
             <a href="https://www.facebook.com/share/1KcTe5nRVG/" target="_blank" style="--i:7"><i class='bx bxl-facebook'></i></a>
             <a href="https://github.com/salman0325/" target="_blank" style="--i:8"><i class='bx bxl-github'></i></a>
             <a href="https://wa.me/923487587794" target="_blank" style="--i:9"><i class='bx bxl-whatsapp' ></i></a>
-            <a href="https://www.linkedin.com/in/salman-khan-7914b5313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="--i:10"><i class='bx bxl-linkedin' style='color: #E46400'  ></i></i></a>
+            <a href="https://www.linkedin.com/in/salman-khan-7914b5313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="--i:10"><i class='bx bxl-linkedin'></i></a>
         </div>
-        <a href="pics/SALMAN-DevOps-CV.pdf" class="btn-box">Download Resume</a>
+        <a href="pics/Salman-Khan-CV.pdf" class="btn-box" download>Download Resume</a>
     </div>
     <div class="home-img">
-        <img src="pics/3.jpeg" width="300px" style="border-radius: 50%;" alt="Profile Image">
+        <img src="pics/3.jpeg" width="300px" style="border-radius: 50%;" alt="Salman Khan profile picture">
     </div>
     </section>
 
+    <section id="terminal-showcase">
+        <div class="container terminal-container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="terminal-title">salman@devops:~</span>
+                </div>
+                <div class="terminal-body">
+                    <span id="terminal-text"></span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-   
     <section class="about-section" id="about">
 
         <div class="about-grid">
-      
+
           <!-- LEFT CONTENT -->
           <div class="about-text">
             <h1>About <span>Me</span></h1>
-            <h3>DevOps / SRE / GitOps Engineer</h3>
-      
+            <h3>DevOps / Cloud Associate Engineer</h3>
+
             <p>
-              I am a DevOps, SRE, and GitOps Engineer with a strong focus on automation,
-              infrastructure reliability, and scalable systems. I work with cloud platforms,
-              CI/CD pipelines, containerization, and infrastructure as code to build and manage
-              production-ready environments. Web technologies are used mainly to create and
-              maintain my personal portfolio and technical projects.
+              I'm a DevOps &amp; Cloud Associate based in Lahore, Pakistan, focused on automation,
+              infrastructure reliability, and scalable systems. I work with Docker, Kubernetes, and
+              Helm for orchestration; Terraform and Ansible for infrastructure as code; and Jenkins,
+              GitHub Actions, and Argo CD to ship GitOps-driven CI/CD pipelines. I round it out with
+              Prometheus and Grafana for monitoring, and Trivy / SonarQube / OWASP Dependency Check
+              for security and code-quality gates &mdash; owning infrastructure end-to-end, from
+              provisioning to observability.
             </p>
-      
-            <a href="#" class="btn">Download Resume</a>
+
+            <a href="pics/Salman-Khan-CV.pdf" class="btn" download>Download Resume</a>
           </div>
-      
+
           <!-- RIGHT IMAGE -->
           <div class="about-img">
-            <img src="pics/3.jpeg" alt="profile" />
+            <img src="pics/3.jpeg" alt="Salman Khan" />
           </div>
-      
+
         </div>
-      
+
       </section>
+
+    <section id="Skills">
+        <h1 class="sub-title">My <span>Skills</span></h1>
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <div class="skill-cat-header"><i class='bx bx-terminal'></i><h3>Linux Administration</h3></div>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="devicon-linux-plain colored"></i>Linux</span>
+                    <span class="skill-tag"><i class='bx bx-lock-alt'></i>File Permissions</span>
+                    <span class="skill-tag"><i class='bx bx-user'></i>User Management</span>
+                    <span class="skill-tag"><i class='bx bx-hdd'></i>LVM</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header"><i class='bx bxs-cube-alt'></i><h3>Orchestration</h3></div>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="devicon-docker-plain colored"></i>Docker</span>
+                    <span class="skill-tag"><i class="devicon-kubernetes-plain colored"></i>Kubernetes</span>
+                    <span class="skill-tag"><i class='bx bxs-ship'></i>Helm</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header"><i class='bx bx-network-chart'></i><h3>Networking</h3></div>
+                <div class="skill-tags">
+                    <span class="skill-tag">VPC</span>
+                    <span class="skill-tag">Ingress</span>
+                    <span class="skill-tag">DNS</span>
+                    <span class="skill-tag">Load Balancing</span>
+                    <span class="skill-tag">SSH</span>
+                    <span class="skill-tag">SSL/TLS</span>
+                    <span class="skill-tag">Firewalls &amp; SGs</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header"><i class='bx bxs-cloud'></i><h3>Cloud Platforms</h3></div>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="devicon-amazonwebservices-original"></i>AWS</span>
+                    <span class="skill-tag"><i class="devicon-azure-plain colored"></i>Azure</span>
+                </div>
+                <div class="skill-subtext">EC2 · VPC · S3 · IAM · ECR · ECS · EKS &nbsp;|&nbsp; VM · VNet · Blob Storage · Entra ID · AKS</div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header"><i class='bx bx-git-branch'></i><h3>Version Control &amp; Web Server</h3></div>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="devicon-git-plain colored"></i>Git</span>
+                    <span class="skill-tag"><i class="devicon-github-original"></i>GitHub</span>
+                    <span class="skill-tag"><i class="devicon-nginx-original"></i>Nginx</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header"><i class='bx bx-data'></i><h3>Databases</h3></div>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="devicon-mysql-plain colored"></i>MySQL</span>
+                    <span class="skill-tag"><i class="devicon-mongodb-plain colored"></i>MongoDB</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header"><i class='bx bx-cog'></i><h3>IaC &amp; Automation</h3></div>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="devicon-terraform-plain colored"></i>Terraform</span>
+                    <span class="skill-tag"><i class="devicon-ansible-plain colored"></i>Ansible</span>
+                    <span class="skill-tag"><i class="devicon-jenkins-line colored"></i>Jenkins</span>
+                    <span class="skill-tag"><i class='bx bxl-github'></i>GitHub Actions</span>
+                    <span class="skill-tag"><i class="devicon-argocd-plain colored"></i>Argo CD</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-cat-header"><i class='bx bx-shield-quarter'></i><h3>Monitoring &amp; Security</h3></div>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="devicon-prometheus-original"></i>Prometheus</span>
+                    <span class="skill-tag"><i class="devicon-grafana-original"></i>Grafana</span>
+                    <span class="skill-tag"><i class='bx bx-search-alt'></i>Trivy</span>
+                    <span class="skill-tag"><i class='bx bx-check-shield'></i>SonarQube</span>
+                    <span class="skill-tag"><i class='bx bx-shield-alt-2'></i>OWASP Dep. Check</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container timeline-container">
+            <h1 class="sub-title">Work <span>Experience</span></h1>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Nov 2025 &ndash; Feb 2026</span>
+                        <h3>DevOps Intern</h3>
+                        <h4>Rhombix Technologies &middot; Remote</h4>
+                        <ul>
+                            <li>Owned CI/CD pipeline delivery using Jenkins and GitHub Actions for containerized application deployments.</li>
+                            <li>Deployed and managed containerized workloads on Docker and Kubernetes.</li>
+                            <li>Provisioned AWS infrastructure using Terraform and configured monitoring with Prometheus and Grafana.</li>
+                            <li>Partnered with the development team to standardize and automate deployment workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Corvids Lab</span>
+                        <h3>DevOps Associate</h3>
+                        <h4>Corvids Lab</h4>
+                        <ul>
+                            <li>Took end-to-end ownership of an ERP-style automation tool for a USA-based client, replacing manual repetitive processes.</li>
+                            <li>Built a Python-based web scraping pipeline with scheduled cron jobs for automated lead generation.</li>
+                            <li>Integrated OCR for automated data extraction from documents and images.</li>
+                            <li>Developed backend APIs connecting scraped data to Pipedrive CRM, automating deal creation and closure.</li>
+                            <li>Delivered a fully automated lead-to-deal pipeline requiring zero manual intervention.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <section class="services" id="services">
         <div class="container">
@@ -82,112 +240,29 @@
                 <h2>GitOps Automation</h2>
                 <p>Implementing GitOps practices to manage infrastructure and application deployments. Using Git as the single source of truth, automating deployments, and enabling reliable, version-controlled operations.
                     </p>
-                <a href="#" class="read">learn more</a>
                 </div>
                 <div>
                     <i class='bx bx-crop' style='color:#E46400' ></i>
                 <h2>CI/CD Automation</h2>
                 <p>Implementing automated CI/CD pipelines to speed up development and deployment processes. Helping teams deliver code faster with reduced errors and improved reliability.
                     </p>
-                <a href="#" class="read">learn more</a>
+                </div>
+                <div>
+                    <i class='bx bx-cloud' style='color:#E46400' ></i>
+                <h2>Cloud &amp; IaC</h2>
+                <p>Provisioning and managing cloud infrastructure on AWS and Azure with Terraform and Ansible, turning manual setup into repeatable, version-controlled infrastructure as code.
+                    </p>
                 </div>
                 <div>
                     <i class='bx bx-paint-roll' style='color:#E46400' ></i>
-                <h2>Monitoring & Security</h2>
+                <h2>Monitoring &amp; Security</h2>
                 <p>Setting up monitoring, logging, and security best practices to ensure system stability. Proactively detecting issues and maintaining secure, high-performance production environments.
-                    </p></p>
-                <a href="#" class="read">learn more</a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <h1 class="sub-title">My <span>Skills</span></h1>
 
-    <section>
-        <div class="container1" id="Skills">
-            <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-                <div class="bar"><i style="color: #0db7ed;" class='bx bxl-docker' style='color:#E46400' ></i>
-                    <div class="info">
-                        <span>HTML</span>
-                    </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #326ce5;" class='bx bxl-kubernetes' style='color:#E46400' ></i>
-                    <div class="info">
-                        <span>CSS</span>
-                    </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #0ef;" class='bx bx-cog' style='color:#E46400' ></i>
-                    <div class="info">
-                        <span>Bootstrap</span>
-                    </div>
-                    <div class="progress-line bootstrap">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color:#00cc66;" class='bx bx-bar-chart-alt-2' style='color:#E46400' ></i>
-                    <div class="info">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="progress-line javascript">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color:#E46400;" class='bx bx-buildings' style='color:#E46400' ></i>
-                    <div class="info">
-                        <span>react</span>
-                    </div>
-                    <div class="progress-line react">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container1" id="container_1">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">90%</div>
-                <div class="text">Creativity</div>
-            </div>
-            <div class="radial-bars">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">65%</div>
-                <div class="text">Communication</div>
-            </div>
-            <div class="radial-bars">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">75%</div>
-                <div class="text">Problem solving</div>
-            </div>
-            <div class="radial-bars">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">85%</div>
-                <div class="text">Teamwork</div>
-            </div>
-        </div>
-    </section>
-<br><br><br><br><br><br>
 <section id="myProjectsHalfScreen">
     <div class="projects-container-halfscreen">
         <h1 class="projects-title-halfscreen">My Projects</h1>
@@ -195,13 +270,13 @@
         <!-- Row 1 -->
         <div class="projects-row-halfscreen">
             <div class="project-card-halfscreen">
-                <h2>Production-Grade Full-Stack Application on Kubernetes</h2>
+                <h2>Production-Grade Kubernetes Deployment with GitOps</h2>
                 <p class="project-tech-halfscreen">Tech: Docker, Kubernetes, Argo CD, GitHub Actions, AWS</p>
                 <ul class="project-desc-halfscreen">
-                    <li>Containerized React, Node.js, and MongoDB services on Kubernetes</li>
-                    <li>Designed Kubernetes manifests (Deployments, Services, Ingress, ConfigMaps)</li>
-                    <li>Implemented GitOps-based continuous deployment using Argo CD</li>
-                    <li>Reduced manual deployment effort by 90% through automation</li>
+                    <li>Containerized Node.js applications with Docker and deployed to Kubernetes using Deployments, Services, Ingress, and ConfigMaps</li>
+                    <li>Implemented GitOps-based continuous deployment with Argo CD</li>
+                    <li>Reduced deployment time by 90% and improved deployment consistency</li>
+                    <li>Followed Kubernetes best practices for scalable, production-ready deployments</li>
                 </ul>
                 <div class="project-links-halfscreen">
                     <a href="https://github.com/salman0325/Jenkins_SharedLib-wender-list.git" target="_blank">Repo 1</a>
@@ -210,13 +285,12 @@
             </div>
 
             <div class="project-card-halfscreen">
-                <h2>End-to-End CI/CD Pipeline with Jenkins & Security Scanning</h2>
+                <h2>End-to-End CI/CD Pipeline with Jenkins</h2>
                 <p class="project-tech-halfscreen">Tech: Jenkins, Docker-Compose, Trivy, OWASP Dependency Check, SonarQube</p>
                 <ul class="project-desc-halfscreen">
-                    <li>Built Jenkins pipelines with automated build, test, and deployment stages</li>
-                    <li>Integrated Trivy, OWASP Dependency Check, and SonarQube with Quality Gates</li>
-                    <li>Automated Docker image creation and deployment using Docker-Compose</li>
-                    <li>Improved deployment reliability and code quality enforcement</li>
+                    <li>Built automated CI/CD pipelines with Jenkins, integrating Trivy, SonarQube, and OWASP Dependency Check for security and code quality gates</li>
+                    <li>Automated Docker image build and deployment via Docker Compose</li>
+                    <li>Cut manual deployment effort through automated build, test, and deploy stages</li>
                 </ul>
                 <div class="project-links-halfscreen">
                     <a href="https://github.com/salman0325/Rhombix-technologies-intern-repo.git" target="_blank">Repo 1</a>
@@ -228,13 +302,12 @@
         <!-- Row 2 -->
         <div class="projects-row-halfscreen">
             <div class="project-card-halfscreen">
-                <h2>Monitoring & Observability for Kubernetes Applications</h2>
+                <h2>Kubernetes Monitoring with Prometheus &amp; Grafana</h2>
                 <p class="project-tech-halfscreen">Tech: Prometheus, Grafana, Alertmanager</p>
                 <ul class="project-desc-halfscreen">
-                    <li>Implemented cluster and application monitoring using Prometheus and Grafana</li>
-                    <li>Created dashboards for CPU, memory, pod health, and uptime metrics</li>
-                    <li>Configured Alertmanager for email-based alerts</li>
-                    <li>Improved system visibility and faster issue detection</li>
+                    <li>Implemented cluster and application monitoring with Grafana dashboards for CPU, memory, pod health, and node utilization</li>
+                    <li>Configured Alertmanager for email notifications</li>
+                    <li>Improved observability and reduced issue-detection time</li>
                 </ul>
                 <div class="project-links-halfscreen">
                     <a href="https://github.com/salman0325/observability-zero-to-hero.git" target="_blank">Repo</a>
@@ -242,22 +315,49 @@
             </div>
 
             <div class="project-card-halfscreen">
-                <h2>NGINX – Reverse Proxy & Load Balancer</h2>
-                <p class="project-tech-halfscreen">Tech: NGINX, Node.js</p>
+                <h2>Automated Lead Generation &amp; Deal Management System (ERP-style CRM Automation)</h2>
+                <p class="project-tech-halfscreen">Tech: Python, OCR, Pipedrive CRM API, Apollo.io</p>
                 <ul class="project-desc-halfscreen">
-                    <li>Configured NGINX as a load balancer to optimize traffic across multiple servers</li>
-                    <li>Set up NGINX reverse proxy for a Node.js application</li>
-                    <li>Improved performance and scalability</li>
-                    <li>Ensured efficient resource utilization in a multi-server environment</li>
+                    <li>Built an automated Python pipeline that collects bid opportunities and extracts key details from solicitation PDFs into a clean, CRM-ready dataset</li>
+                    <li>Designed a multi-stage pipeline (Fetch &rarr; Extract &rarr; Transform &rarr; Dedupe &rarr; Enrich) with deduplication logic</li>
+                    <li>Automated contact enrichment via Apollo.io, integrated with Pipedrive CRM for zero-touch deal creation</li>
                 </ul>
                 <div class="project-links-halfscreen">
-                    <a href="https://github.com/salman0325/Nginx_for_devops.git" target="_blank">Repo</a>
+                    <span class="project-tag-private">Private client project</span>
                 </div>
             </div>
         </div>
 
     </div>
 </section>
+
+<section id="credentials">
+    <div class="container credentials-container">
+        <div class="credentials-col">
+            <h2 class="cred-heading"><i class='bx bx-award'></i> Certifications</h2>
+            <ul class="cred-list">
+                <li>
+                    <span class="cred-title">Docker &amp; Kubernetes</span>
+                    <span class="cred-sub">KodeKloud &middot; Aug 2025 &ndash; Nov 2025</span>
+                </li>
+                <li>
+                    <span class="cred-title">AWS Zero to Hero</span>
+                    <span class="cred-sub">Shubham Londhe &middot; Jan 2026</span>
+                </li>
+            </ul>
+        </div>
+        <div class="credentials-col">
+            <h2 class="cred-heading"><i class='bx bxs-graduation'></i> Education</h2>
+            <ul class="cred-list">
+                <li>
+                    <span class="cred-title">Bachelor of Science in Computer Science</span>
+                    <span class="cred-sub">The University of Agriculture, Peshawar</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <section class="contact" id="contact">
     <div class="contact-text">
         <h2>Contact <span>Me</span></h2>
@@ -265,7 +365,8 @@
         <p>If you have any questions, project ideas, or just want to say hello, feel free to reach out to me. I'm always open to new opportunities and collaborations. You can contact me via email, phone, or through my social media channels. I look forward to hearing from you!</p>
         <div class="contact-list">
             <li><i class='bx bx-send'></i> cloudchamp0325@gmail.com</li><br>
-            <li><i class='bx bxs-phone'></i> 03487587794</li>
+            <li><i class='bx bxs-phone'></i> +92 348 7587794</li><br>
+            <li><i class='bx bx-map'></i> Lahore, Punjab, Pakistan</li>
             <div class="contact-icons">
                 <a href="https://www.facebook.com/share/1KcTe5nRVG/" target="_blank"><i class='bx bxl-facebook' style="--i:1"></i></a>
                 <a href="https://github.com/salman0325/" target="_blank"><i class='bx bxl-github' style="--i:2"></i></a>
@@ -276,20 +377,24 @@
     </div>
 
     <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Enter Your Name" required>
-            <input type="email" placeholder="Enter Your Email" required>
-            <input type="" placeholder="Enter Your Subject">
-            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+        <form action="https://formsubmit.co/cloudchamp0325@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from your portfolio site">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thank-you.html">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <input type="text" name="subject" placeholder="Enter Your Subject">
+            <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
             <input type="submit" value="submit" class="send">
         </form>
     </div>
 </section>
 <div class="last-text">
-    <p>Developed with love by Salman Khan © 2026</p>
+    <p>Developed with love by Salman Khan &copy; 2026</p>
 </div>
 <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
-    
+
 
 
 
