@@ -432,30 +432,47 @@ body{
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+.services-list .service-card{
     background: #0a0a0a;
     padding: 40px;
     font-size: 13px;
     font-weight: 13px;
     border-radius: 20px;
-    transition: background .5s, transform .5s;
-    box-shadow: 1px 1px 20px rgba(228,100,0,0.35);
+    border: 1px solid #262626;
+    transition: background .5s, transform .5s, border-color .5s;
+    box-shadow: 1px 1px 20px rgba(228,100,0,0.15);
 }
-.services-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
+.service-icon{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(228,100,0,0.12);
+    border: 1px solid rgba(228,100,0,0.4);
+    margin-bottom: 26px;
+    transition: background .4s, transform .4s;
 }
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
+.service-icon i{
+    font-size: 28px;
+    color: #E46400;
+}
+.services-list .service-card:hover .service-icon{
+    background: #E46400;
+    transform: scale(1.08);
+}
+.services-list .service-card:hover .service-icon i{
+    color: #000;
+}
+.services-list .service-card h2{
+    font-size: 24px;
+    font-weight: 600;
     margin-bottom: 15px;
 }
-.services-list div a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+.services-list .service-card p{
+    color: #ccc;
+    line-height: 1.7;
 }
 .read{
     display: inline-block;
@@ -478,8 +495,9 @@ body{
     0 0 25px #E46400, 0 0 25px #E46400,
     0 0 100px #E46400, 0 0 200px #E46400
 }
-.services-list div:hover{
-    transform: translateY(-20px);
+.services-list .service-card:hover{
+    transform: translateY(-10px);
+    border-color: #E46400;
 }
 section{
     display: flex;
