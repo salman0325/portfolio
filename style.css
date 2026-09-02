@@ -174,14 +174,15 @@ body{
 /* ===== TERMINAL SHOWCASE ===== */
 #terminal-showcase{
     background: #000;
-    padding: 20px 10% 80px;
+    padding: 20px 24px 80px;
     display: flex;
     justify-content: center;
 }
 .terminal-container{
     width: 100%;
     padding: 0;
-    max-width: 780px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .terminal-window{
     width: 100%;
@@ -423,7 +424,7 @@ body{
     color:#E46400;
 }
 .container{
-    padding: 90px;
+    padding: 50px 24px;
 }
 .services-list{
     display: grid;
@@ -498,7 +499,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
-    padding: 0 10% 40px;
+    padding: 0 24px 40px;
 }
 .skill-category{
     background: #101010;
@@ -581,7 +582,7 @@ section{
     width: 100%;
 }
 .timeline{
-    max-width: 850px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     padding-left: 30px;
@@ -654,7 +655,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .credentials-col{
@@ -1274,7 +1275,7 @@ section{
 
 /* TERMINAL */
 #terminal-showcase{
-    padding: 15px 6% 60px;
+    padding: 15px 24px 60px;
 }
 
 /* ABOUT */
@@ -1296,17 +1297,12 @@ section{
 
 /* SERVICES / EXPERIENCE / CREDENTIALS CONTAINER */
 .container{
-    padding: 50px 6%;
+    padding: 40px 24px;
 }
 
 /* SKILLS */
 .skills-grid{
-    padding: 0 6% 30px;
-}
-
-/* CREDENTIALS */
-.credentials-container{
-    max-width: 900px;
+    padding: 0 24px 30px;
 }
 
 /* PROJECTS */
