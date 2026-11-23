@@ -1033,13 +1033,13 @@ section{
 .projects-row-halfscreen {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px 20px;
     margin-bottom: 40px;
 }
 
 /* Each Project Card - 50% width for desktop */
 .project-card-halfscreen {
-    flex: 1 1 calc(50% - 20px);
+    flex: 0 1 calc(50% - 10px);
     background-color: #1E1E1E;
     border-radius: 15px;
     padding: 25px;

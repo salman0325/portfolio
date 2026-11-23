@@ -40,11 +40,11 @@ function handleTerminalCommand(cmd, live, body) {
 
     var responses = {
         "help": "Available commands: whoami, about, skills, experience, projects, contact, ls, date, clear",
-        "whoami": "Salman Khan &mdash; DevOps &amp; Cloud Associate Engineer, based in Lahore, Pakistan.",
-        "about": "DevOps &amp; Cloud Associate with hands-on experience in Docker, Kubernetes, AWS, Terraform, Jenkins, GitHub Actions, Argo CD, Prometheus &amp; Grafana.",
+        "whoami": "Salman Khan &mdash; DevOps &amp; SRE Engineer (banking &amp; fintech), based in Lahore, Pakistan.",
+        "about": "DevOps &amp; SRE Engineer with 1+ year running banking &amp; fintech production. Hands-on with Docker, Kubernetes, AWS, Terraform, Jenkins, GitHub Actions, Argo CD, Prometheus &amp; Grafana.",
         "skills": "Linux &middot; Docker &middot; Kubernetes &middot; Helm &middot; AWS &middot; Azure &middot; Terraform &middot; Ansible &middot; Jenkins &middot; GitHub Actions &middot; Argo CD &middot; Prometheus &middot; Grafana &rarr; scrolling to Skills&hellip;",
-        "experience": "DevOps Intern @ Rhombix Technologies (Nov 2025&ndash;Feb 2026) &middot; DevOps Associate @ Corvids Lab &rarr; scrolling to Experience&hellip;",
-        "projects": "K8s GitOps deployment &middot; Jenkins CI/CD pipeline &middot; Prometheus/Grafana monitoring &middot; CRM automation &rarr; scrolling to Projects&hellip;",
+        "experience": "SRE Engineer @ Paysys Lab (Present) &middot; DevOps Associate @ Corvids Lab &middot; DevOps Intern @ Rhombix Technologies (Nov 2025&ndash;Feb 2026) &rarr; scrolling to Experience&hellip;",
+        "projects": "Bank of Punjab production SRE &middot; K8s GitOps deployment &middot; Jenkins CI/CD pipeline &middot; Prometheus/Grafana monitoring &middot; CRM automation &rarr; scrolling to Projects&hellip;",
         "contact": "cloudchamp0325@gmail.com &middot; +92 348 7587794 &rarr; scrolling to Contact&hellip;",
         "date": new Date().toString(),
         "ls": "about.txt&nbsp;&nbsp;experience.log&nbsp;&nbsp;projects/&nbsp;&nbsp;skills.json&nbsp;&nbsp;contact.sh",
